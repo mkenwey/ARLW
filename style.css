@@ -1425,6 +1425,20 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
     }    
 }
 
+@media screen and (min-width: 416px)
+{
+    .det{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px)
+{
+    .det{
+        display: block;
+    }
+}
+
 @media screen and (min-width: 925px) {   
     .main-menu
     {
