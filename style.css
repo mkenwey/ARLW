@@ -1432,6 +1432,17 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
     }
 }
 
+@media screen and (min-width: 1025px)
+{
+    #section06 a span{
+        margin: 0 auto;
+    }
+
+    .svggg{
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 925px) {  
 
 

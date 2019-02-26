@@ -56,47 +56,47 @@ jQuery(window).load(function () {
     }
 
     //Set each image slider
-    jQuery(".image-slider").each(function () {
-        var id = jQuery(this).attr('id');
-        var auto_value = window[id + '_auto'];
-        if (auto_value == 'false')
-        {
-            auto_value = false;
-        } else {
-            auto_value = true;
-        }
+    // jQuery(".image-slider").each(function () {
+    //     var id = jQuery(this).attr('id');
+    //     var auto_value = window[id + '_auto'];
+    //     if (auto_value == 'false')
+    //     {
+    //         auto_value = false;
+    //     } else {
+    //         auto_value = true;
+    //     }
 
-        var hover_pause = window[id + '_hover'];
-        if (hover_pause == 'true')
-        {
-            hover_pause = 'resume';
-        } else {
-            hover_pause = false;
-        }
+    //     var hover_pause = window[id + '_hover'];
+    //     if (hover_pause == 'true')
+    //     {
+    //         hover_pause = 'resume';
+    //     } else {
+    //         hover_pause = false;
+    //     }
 
-        var speed_value = window[id + '_speed'];
-        jQuery('#' + id).carouFredSel({
-            responsive: true,
-            width: 'variable',
-            auto: {
-                play: auto_value,
-                pauseOnHover: hover_pause
-            },
-            next: '#' + id + '_next',
-            scroll: {
-                fx: 'crossfade',
-                duration: parseFloat(speed_value)
-            },
-            swipe: {
-                onMouse: true,
-                onTouch: true
-            },
-            items: {
-                visible: 1,
-                height: 'variable'
-            }
-        });
-    });
+    //     var speed_value = window[id + '_speed'];
+    //     jQuery('#' + id).carouFredSel({
+    //         responsive: true,
+    //         width: 'variable',
+    //         auto: {
+    //             play: auto_value,
+    //             pauseOnHover: hover_pause
+    //         },
+    //         next: '#' + id + '_next',
+    //         scroll: {
+    //             fx: 'crossfade',
+    //             duration: parseFloat(speed_value)
+    //         },
+    //         swipe: {
+    //             onMouse: true,
+    //             onTouch: true
+    //         },
+    //         items: {
+    //             visible: 1,
+    //             height: 'variable'
+    //         }
+    //     });
+    // });
     jQuery('.image-slider-wrapper').each(function () {
         var slider_width = jQuery(this).width();
         var pagination_width = jQuery(this).find('.carousel_pagination').width();
